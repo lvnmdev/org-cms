@@ -1,0 +1,48 @@
+<div class="sidebar">
+    <div class="sidebar-head">
+        <div class="logo">
+            <p>ORGANIZER</p>
+        </div>
+    </div>
+    <div class="sidebar-body">
+        <aside class="menu">
+            <p class="menu-label">
+                General
+            </p>
+            <ul class="menu-list">
+                <li [routerLink]="[{ outlets: { 'app': ['dashboard'] } }]" routerLinkActive="active"><a>Dashboard</a></li>
+                <li [routerLink]="[{ outlets: { 'app': ['my-organization'] } }]" routerLinkActive="active"><a>My Organization</a></li>
+                <li [routerLink]="[{ outlets: { 'app': ['user-manager'] } }]" routerLinkActive="active"><a>Organization List</a></li>
+            </ul>
+            <p class="menu-label">
+                Reports
+            </p>
+            <ul class="menu-list">
+                <li [routerLink]="[{ outlets: { 'app': ['dashboard'] } }]" routerLinkActive="active"><a>Events</a></li>
+                <li [routerLink]="[{ outlets: { 'app': ['dashboard'] } }]" routerLinkActive="active"><a>Member Count</a></li>
+            </ul>
+            <p class="menu-label">
+                Administration
+            </p>
+            <ul class="menu-list">
+                <li [routerLink]="[{ outlets: { 'app': ['user-manager'] } }]" routerLinkActive="active"><a>User Manager</a></li>
+                <li [routerLink]="[{ outlets: { 'app': ['organization'] } }]" routerLinkActive="active"><a>Organization</a></li>
+                <li [routerLink]="[{ outlets: { 'app': ['organization'] } }]" routerLinkActive="active"><a>Attributes</a></li>
+                <li [routerLink]="[{ outlets: { 'app': ['developer'] } }]" routerLinkActive="active"><a>Developer</a></li>
+            </ul>
+            <p class="menu-label">
+                Settings
+            </p>
+            <ul class="menu-list">
+                <li><a>Account</a></li>
+                <li><a>Theme</a></li>
+                <li><a>Yeet?</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- <div class="sidebar-footer">
+        <a>
+            <span><i class="fas fa-cog"></i> Settings</span>
+        </a>
+    </div> -->
+</div>

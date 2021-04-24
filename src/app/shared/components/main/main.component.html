@@ -1,0 +1,28 @@
+<!-- <div class="main-container">
+    <div class="main-sidebar">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="main-content">
+        <div class="main-header">
+            <app-header></app-header>
+        </div>
+        <div class="main-body">
+            <router-outlet name="app"></router-outlet>
+        </div>
+        <div class="main-footer">
+
+        </div>
+    </div>
+</div> -->
+
+<div class="container is-fluid" style="padding: 0;">
+    <div class="columns is-gapless">
+        <div class="column is-narrow">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="column main-bgcolor">
+            <app-header></app-header>
+            <router-outlet name="app" ></router-outlet>
+        </div>
+    </div>
+</div>
